@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan PKL - Jeconia Adelio Putra</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="bg-effects">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav" id="mainNav">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand neon-text fw-bold" href="#halaman">
+                <i data-lucide="cpu" class="me-2"></i>
+                PKL REPORT
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#halaman">Halaman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biodata">Biodata</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pendahuluan">Pendahuluan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#latar-belakang">Latar Belakang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil-iduka">Profil IDUKA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kompetensi">Kompetensi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pesan-kesan">Pesan & Kesan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="halaman" class="hero-section min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <div class="hero-content" data-aos="fade-up">
+                        <div class="tech-badge mb-4">
+                            <span class="badge glass-badge px-4 py-2">
+                                <i data-lucide="zap" class="icon-sm me-2"></i>
+                                PRAKTIK KERJA LAPANGAN 2025
+                            </span>
+                        </div>
+                        <h1 class="display-3 fw-bold gradient-text mb-4">
+                            LAPORAN PRAKTIK KERJA LAPANGAN
+                        </h1>
+                        <h2 class="h2 neon-text mb-4">TEFA SMKN 8 Malang</h2>
+                        <p class="lead text-cyan mb-5">BRAVO SMKN 8 Malang</p>
+                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                            <a href="#biodata" class="btn btn-neon btn-lg">
+                                <i data-lucide="user" class="icon-sm me-2"></i>
+                                Lihat Profil
+                            </a>
+                            <a href="#pendahuluan" class="btn btn-outline-neon btn-lg">
+                                <i data-lucide="book-open" class="icon-sm me-2"></i>
+                                Mulai Membaca
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down" class="icon-md"></i>
+        </div>
+    </section>
+
+    <!-- Profile Card Section -->
+    <section id="biodata" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold gradient-text mb-3">Biodata Siswa</h2>
+                        <div class="divider-neon mx-auto"></div>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-lg-4" data-aos="fade-right">
+                            <div class="profile-card glass-card p-4 h-100">
+                                <div class="profile-image-wrapper mb-4">
+                                    <div class="profile-image-border">
+                                        <img src="assets/images/dev.jpg" 
+                                             alt="Profile" 
+                                             class="profile-image">
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <h3 class="h4 fw-bold text-white mb-2">Jeconia Adelio Putra</h3>
+                                    <p class="text-cyan mb-3">NIS: 3085076691</p>
+                                    <div class="social-links d-flex gap-3 justify-content-center">
+                                        <a href="https://github.com/JEC0NI" class="social-icon">
+                                            <i data-lucide="github"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/jeconia-adelio-putra-741ab1335/?trk=contact-info" class="social-icon">
+                                            <i data-lucide="linkedin"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/jeconia.adelio.putra/" class="social-icon">
+                                            <i data-lucide="instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-8" data-aos="fade-left">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="h5 fw-bold text-white mb-4">
+                                    <i data-lucide="info" class="icon-sm me-2 text-cyan"></i>
+                                    Informasi Personal
+                                </h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <label class="text-cyan small mb-1">Tempat, Tanggal Lahir</label>
+                                            <p class="text-white mb-0">Malang, 18 Februari 2008</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <label class="text-cyan small mb-1">Jenis Kelamin</label>
+                                            <p class="text-white mb-0">Laki-laki</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <label class="text-cyan small mb-1">Kelas</label>
+                                            <p class="text-white mb-0">XII TKJ C</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="info-item">
+                                            <label class="text-cyan small mb-1">Jurusan</label>
+                                            <p class="text-white mb-0">XII TKJ C</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="info-item">
+                                            <label class="text-cyan small mb-1">Sekolah</label>
+                                            <p class="text-white mb-0">SMK Negeri 8 Malang</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="info-item">
+                                            <label class="text-cyan small mb-1">Alamat</label>
+                                            <p class="text-white mb-0">Jl. Simpang Teluk Grajakan, Blok 3, No. 4. Blimbing, Pandanwangi, Malang</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAB 1: Pendahuluan -->
+    <section id="pendahuluan" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold gradient-text mb-3">
+                            <i data-lucide="book-open" class="icon-md me-3"></i>
+                            Pendahuluan
+                        </h2>
+                        <div class="divider-neon mx-auto"></div>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5" data-aos="fade-up">
+                        <h4 class="h5 fw-bold text-white mb-4">
+                            <i data-lucide="target" class="icon-sm me-2 text-cyan"></i>
+                            Latar Belakang PKL
+                        </h4>
+                        <p class="text-light mb-4">
+                            Praktik Kerja Lapangan (PKL) merupakan kegiatan wajib yang harus dilaksanakan oleh siswa SMK sebagai bagian dari kurikulum pendidikan. 
+                            PKL bertujuan untuk memberikan pengalaman langsung kepada siswa dalam dunia kerja yang sesungguhnya, sehingga dapat mengaplikasikan 
+                            ilmu yang telah dipelajari di sekolah ke dalam praktik nyata di industri.
+                        </p>
+                        
+                        <h4 class="h5 fw-bold text-white mb-4 mt-5">
+                            <i data-lucide="crosshair" class="icon-sm me-2 text-cyan"></i>
+                            Tujuan PKL
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">1. Tujuan Umum</label>
+                                    <p class="text-white mb-0">Meningkatkan kualitas dan relevansi pendidikan kejuruan melalui pengalaman kerja langsung di industri.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">2. Tujuan Khusus</label>
+                                    <p class="text-white mb-0">Mengembangkan kompetensi teknis dan soft skills yang dibutuhkan di dunia kerja profesional.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="h5 fw-bold text-white mb-4 mt-5">
+                            <i data-lucide="award" class="icon-sm me-2 text-cyan"></i>
+                            Manfaat PKL
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Bagi Siswa</label>
+                                    <p class="text-white mb-0">Mendapatkan pengalaman kerja nyata dan meningkatkan keterampilan profesional.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Bagi Sekolah</label>
+                                    <p class="text-white mb-0">Menjalin kerjasama dengan industri dan meningkatkan kualitas lulusan.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Bagi Industri</label>
+                                    <p class="text-white mb-0">Mendapatkan calon tenaga kerja yang terlatih dan siap pakai.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAB 2: Latar Belakang -->
+    <section id="latar-belakang" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold gradient-text mb-3">
+                            <i data-lucide="building-2" class="icon-md me-3"></i>
+                            Latar Belakang Perusahaan
+                        </h2>
+                        <div class="divider-neon mx-auto"></div>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5 mb-4" data-aos="fade-up">
+                        <h4 class="h5 fw-bold text-white mb-4">
+                            <i data-lucide="info" class="icon-sm me-2 text-cyan"></i>
+                            Profil Perusahaan
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Nama Perusahaan</label>
+                                    <p class="text-white mb-0">SMKN 8 Malang</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Bidang Usaha</label>
+                                    <p class="text-white mb-0">IT</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Tahun Berdiri</label>
+                                    <p class="text-white mb-0">2005</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Direktur Utama</label>
+                                    <p class="text-white mb-0">Eko Arif Fatwa, S.Pd</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Alamat</label>
+                                    <p class="text-white mb-0">Jl. Teluk Pacitan, Arjosari, Kec. Blimbing, Kota Malang, Jawa Timur 65126</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6" data-aos="fade-right">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="h5 fw-bold text-white mb-4">
+                                    <i data-lucide="eye" class="icon-sm me-2 text-cyan"></i>
+                                    Visi Sekolah
+                                </h4>
+                                <p class="text-light mb-0">
+                                    Terwujudnya sekolah model bermutu unggul, bersertifikasi lembaga internasional, berkarakter berdasarkan, IMTAQ dan IPTEK, berkompeten dibidang keahlian serta berbudaya Lingkungan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left">
+                            <div class="glass-card p-4 h-100">
+                                <h4 class="h5 fw-bold text-white mb-4">
+                                    <i data-lucide="target" class="icon-sm me-2 text-cyan"></i>
+                                    Misi Perusahaan
+                                </h4>
+                                <ul class="text-light mb-0 ps-3">
+                                    <li class="mb-2">Menghasilkan lulusan yang memiliki ketaqwaan yang tinggi kepada Tuhan Yang Maha Esa dan memiliki kesadaran yang tinggi terhadap keharmonisan lingkungannya.</li>
+                                    <li class="mb-2">Menyelenggarakan pendidikan dan pelatihan di bidang teknologi yang memiliki kompetensi tinggi, serta mampu bersaing di pasar tenaga kerja nasional maupun internasional.</li>
+                                    <li>Menghasilkan lulusan yang mampu memenuhi tuntutan ilmu pengetahuan dan teknologi sebagai bekal untuk mengembangkan dirinya.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAB 3: Profil IDUKA -->
+    <section id="profil-iduka" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold gradient-text mb-3">
+                            <i data-lucide="briefcase" class="icon-md me-3"></i>
+                            Profil IDUKA
+                        </h2>
+                        <div class="divider-neon mx-auto"></div>
+                        <p class="text-light mt-3">Industri, Dunia Usaha, dan Dunia Kerja</p>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5 mb-4" data-aos="fade-up">
+                        <h4 class="h5 fw-bold text-white mb-4">
+                            <i data-lucide="calendar" class="icon-sm me-2 text-cyan"></i>
+                            Informasi Pelaksanaan PKL
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Tempat PKL</label>
+                                    <p class="text-white mb-0">TEFA</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Divisi/Departemen</label>
+                                    <p class="text-white mb-0">Magang</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Periode PKL</label>
+                                    <p class="text-white mb-0">23 Juni 2025 - 6 November 2025</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Durasi</label>
+                                    <p class="text-white mb-0">5 Bulan</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Pembimbing</label>
+                                    <p class="text-white mb-0">Eko Arif Fatwa</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Pembimbing Sekolah</label>
+                                    <p class="text-white mb-0">Priyo Adi Nugroho, S.ST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5" data-aos="fade-up">
+                        <h4 class="h5 fw-bold text-white mb-4">
+                            <i data-lucide="list-checks" class="icon-sm me-2 text-cyan"></i>
+                            Kegiatan yang Dilakukan
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Minggu 1-2</label>
+                                    <p class="text-white mb-0">Memperbaiki jaringan Sekolah yang rusak</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Minggu 3-6</label>
+                                    <p class="text-white mb-0">Pergi ke lapangan kerja AL-Huda</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Minggu 7-10</label>
+                                    <p class="text-white mb-0">Pergi ke lapangan kerja Muhammadiyah</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Minggu 11-12</label>
+                                    <p class="text-white mb-0">Mempersiapkan jarinagn Sekolah untuk TKA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAB 4: Kompetensi / Cerita PKL -->
+    <section id="kompetensi" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold gradient-text mb-3">
+                            <i data-lucide="book-heart" class="icon-md me-3"></i>
+                            Cerita Perjalanan PKL
+                        </h2>
+                        <div class="divider-neon mx-auto"></div>
+                        <p class="text-light mt-3">Pengalaman berharga selama melaksanakan Praktik Kerja Lapangan</p>
+                    </div>
+                    
+                    <!-- Pesan Pembuka -->
+                    <div class="glass-card p-4 p-md-5 mb-5 text-center" data-aos="fade-up">
+                        <div class="mb-4">
+                            <i data-lucide="sparkles" class="icon-lg text-cyan mb-3" style="width: 48px; height: 48px;"></i>
+                        </div>
+                        <h3 class="h4 fw-bold text-white mb-4">Selamat Datang di Cerita PKL Saya!</h3>
+                        <p class="text-light mb-4 lead">
+                            Hai sobat TEFA, disini aku akan menjelaskan tentang apasih kegiatanku saat PKL di TEFA SMKN 8 Malang, aku bagi menjadi empat halaman di bawah ini ya....
+                        </p>
+                        <p class="text-cyan fw-semibold mb-0">
+                            <i data-lucide="arrow-down" class="icon-sm me-2"></i>
+                            Pilih salah satu untuk melihat cerita lengkap dan dokumentasi kegiatan
+                        </p>
+                    </div>
+
+                    <!-- Pilihan Tempat PKL -->
+                    <div class="row g-4">
+                        <!-- SMKN8/TEFA -->
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="pages/smkn8.html" class="text-decoration-none">
+                                <div class="chapter-card glass-card h-100">
+                                    <div class="chapter-image">
+                                        <img src="assets/images/SMKN 8-2.jpeg" alt="SMKN 8">
+                                        <div class="chapter-overlay">
+                                            <button class="btn btn-neon btn-sm">
+                                                <i data-lucide="arrow-right" class="icon-sm me-2"></i>
+                                                Lihat Cerita
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="chapter-content p-4 text-center">
+                                        <div class="mb-3">
+                                            <span class="badge bg-neon">Tempat 1</span>
+                                        </div>
+                                        <h3 class="h5 fw-bold text-white mb-3">TEFA/SMKN 8</h3>
+                                        <p class="text-light-gray small mb-0">
+                                            Pengalaman dan pembelajaran selama PKL di TEFA/SMKN 8
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- AL-Huda -->
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="pages/ai-huda.html" class="text-decoration-none">
+                                <div class="chapter-card glass-card h-100">
+                                    <div class="chapter-image">
+                                        <img src="assets/images/AL-Huda-1.jpeg" alt="AL-Huda">
+                                        <div class="chapter-overlay">
+                                            <button class="btn btn-neon btn-sm">
+                                                <i data-lucide="arrow-right" class="icon-sm me-2"></i>
+                                                Lihat Cerita
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="chapter-content p-4 text-center">
+                                        <div class="mb-3">
+                                            <span class="badge bg-neon">Tempat 2</span>
+                                        </div>
+                                        <h3 class="h5 fw-bold text-white mb-3">AL-Huda</h3>
+                                        <p class="text-light-gray small mb-0">
+                                            Pengalaman dan pembelajaran selama PKL di AL-Huda
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Muhammadiyah -->
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                            <a href="pages/muhammadiyah.html" class="text-decoration-none">
+                                <div class="chapter-card glass-card h-100">
+                                    <div class="chapter-image">
+                                        <img src="assets/images/Muhammadiyah-2.jpeg" alt="Muhammadiyah">
+                                        <div class="chapter-overlay">
+                                            <button class="btn btn-neon btn-sm">
+                                                <i data-lucide="arrow-right" class="icon-sm me-2"></i>
+                                                Lihat Cerita
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="chapter-content p-4 text-center">
+                                        <div class="mb-3">
+                                            <span class="badge bg-neon">Tempat 3</span>
+                                        </div>
+                                        <h3 class="h5 fw-bold text-white mb-3">Muhammadiyah</h3>
+                                        <p class="text-light-gray small mb-0">
+                                            Pengalaman dan pembelajaran selama PKL di Muhammadiyah
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pesan & Kesan -->
+    <section id="pesan-kesan" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="section-header text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold gradient-text mb-3">
+                            <i data-lucide="heart" class="icon-md me-3"></i>
+                            Pesan & Kesan
+                        </h2>
+                        <div class="divider-neon mx-auto"></div>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5 mb-4" data-aos="fade-up">
+                        <h4 class="h5 fw-bold text-white mb-4">
+                            <i data-lucide="message-circle" class="icon-sm me-2 text-cyan"></i>
+                            Pesan
+                        </h4>
+                        <p class="text-light mb-4">
+                            Kepada TEFA SMKN 8, saya mengucapkan terima kasih yang sebesar-besarnya atas kesempatan 
+                            yang diberikan untuk melaksanakan PKL di perusahaan ini. Pengalaman dan ilmu yang saya dapatkan 
+                            sangat berharga untuk pengembangan karir saya di masa depan.
+                        </p>
+                        <p class="text-light mb-0">
+                            Kepada pembimbing Sekolah dan seluruh tim yang telah membimbing dan mengajarkan saya dengan sabar, 
+                            semoga perusahaan terus berkembang dan menjadi pelopor teknologi di Indonesia.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5 mb-4" data-aos="fade-up">
+                        <h4 class="h5 fw-bold text-white mb-4">
+                            <i data-lucide="smile" class="icon-sm me-2 text-cyan"></i>
+                            Kesan
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Kesan Positif</label>
+                                    <p class="text-white mb-0">
+                                        Lingkungan kerja yang profesional namun tetap friendly, tim yang solid dan supportif, 
+                                        serta kesempatan belajar teknologi terkini membuat pengalaman PKL sangat berkesan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Pembelajaran Berharga</label>
+                                    <p class="text-white mb-0">
+                                        Tidak hanya skill teknis, saya juga belajar tentang profesionalisme, teamwork, 
+                                        dan bagaimana bekerja dalam project real-world yang kompleks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5" data-aos="fade-up">
+                        <h4 class="h5 fw-bold text-white mb-4">
+                            <i data-lucide="lightbulb" class="icon-sm me-2 text-cyan"></i>
+                            Saran
+                        </h4>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Untuk Perusahaan</label>
+                                    <p class="text-white mb-0">
+                                        Terus pertahankan program mentoring yang baik untuk siswa PKL dan tingkatkan 
+                                        kolaborasi dengan sekolah-sekolah kejuruan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Untuk Sekolah</label>
+                                    <p class="text-white mb-0">
+                                        Perbanyak materi praktik yang relevan dengan kebutuhan industri dan fasilitasi 
+                                        lebih banyak kerjasama dengan perusahaan teknologi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="info-item">
+                                    <label class="text-cyan small mb-1">Untuk Siswa PKL Selanjutnya</label>
+                                    <p class="text-white mb-0">
+                                        Manfaatkan kesempatan PKL sebaik-baiknya, jangan takut bertanya, dan selalu 
+                                        proaktif dalam mencari ilmu dan pengalaman baru.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-header text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold gradient-text mb-3">Hubungi Saya</h2>
+                        <div class="divider-neon mx-auto"></div>
+                        <p class="text-light mt-3">Ada pertanyaan atau ingin berdiskusi? Silakan hubungi saya</p>
+                    </div>
+                    
+                    <div class="glass-card p-4 p-md-5" data-aos="fade-up">
+                        <form id="contactForm" action="https://formsubmit.co/jeconiaadelioputra@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="Pesan Baru dari Website PKL">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" id="formRedirect">
+                            
+                            <div class="mb-4">
+                                <label for="name" class="form-label text-cyan">
+                                    <i data-lucide="user" class="icon-sm me-2"></i>
+                                    Nama Lengkap
+                                </label>
+                                <input type="text" class="form-control form-control-neon" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="form-label text-cyan">
+                                    <i data-lucide="mail" class="icon-sm me-2"></i>
+                                    Email
+                                </label>
+                                <input type="email" class="form-control form-control-neon" id="email" name="email" placeholder="nama@email.com" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="form-label text-cyan">
+                                    <i data-lucide="bookmark" class="icon-sm me-2"></i>
+                                    Subjek
+                                </label>
+                                <input type="text" class="form-control form-control-neon" id="subject" name="subject" placeholder="Subjek pesan" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-cyan">
+                                    <i data-lucide="message-square" class="icon-sm me-2"></i>
+                                    Pesan
+                                </label>
+                                <textarea class="form-control form-control-neon" id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-neon btn-lg px-5">
+                                    <i data-lucide="send" class="icon-sm me-2"></i>
+                                    Kirim Pesan
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <!-- Alternative Contact Methods -->
+                        <div class="mt-4 pt-4 border-top border-secondary">
+                            <p class="text-center text-light mb-3">Atau hubungi saya melalui:</p>
+                            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                                <a href="https://api.whatsapp.com/send/?phone=6281243601528&text&type=phone_number&app_absent=0" 
+                                   target="_blank" 
+                                   class="btn btn-outline-neon btn-sm">
+                                    <i data-lucide="message-circle" class="icon-sm me-2"></i>
+                                    WhatsApp
+                                </a>
+                                <a href="mailto:jeconiaadelioputra@gmail.com" 
+                                   class="btn btn-outline-neon btn-sm">
+                                    <i data-lucide="mail" class="icon-sm me-2"></i>
+                                    Email Langsung
+                                </a>
+                                <a href="https://www.instagram.com/jeconia.adelio.putra/" 
+                                   target="_blank" 
+                                   class="btn btn-outline-neon btn-sm">
+                                    <i data-lucide="instagram" class="icon-sm me-2"></i>
+                                    Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-card py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-light-gray">
+                        &copy; 2025 Jeconia Adelio Putra. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-links d-inline-flex gap-3">
+                        <a href="https://github.com/JEC0NI" class="social-icon">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jeconia-adelio-putra-741ab1335/?trk=contact-info" class="social-icon">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jeconia.adelio.putra/" class="social-icon">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
